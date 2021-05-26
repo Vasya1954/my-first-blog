@@ -1,0 +1,29 @@
+{% extends 'canteen/base.html' %}
+
+{% block contents %}
+<table border="1">
+   <caption>Продукты</caption>
+   <tr>
+    <th>Название</th>
+    <th>Количество</th>
+    <th>Цена</th>
+    <th>Дата добавления</th>
+   </tr>
+    {% for pro in prod %}
+    <tr>
+        <td>{{pro.name}}</td>
+        <td>{{pro.weight}}</td>
+        <td>{{pro.cost}}</td>
+        <td>{{pro.created_date}}</td>
+        <td><a href="/products/{{pro.id}}/dell/" onclick="return confirm('Вы уверены что хотите удалить {{pro.name}}?')">Удалить</a></td>
+        <td><a href="/products/{{pro.id}}/edit/">Изменить</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% block contents_form %}
+{% endblock %}
+
+
+{% endblock %}

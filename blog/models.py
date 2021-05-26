@@ -17,7 +17,3 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-class products(models.Model):
-    name = models.CharField(max_length=200)
-    weight = models.IntegerField(max_length=50)
-    cost = models.IntegerField(max_length=50)

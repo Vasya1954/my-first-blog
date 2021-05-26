@@ -1,0 +1,10 @@
+{% extends 'canteen/products.html' %}
+
+{% block contents_form %}
+
+<form method="POST" class="prod-form">{% csrf_token %}
+        {{ form.as_table }}
+        <button type="submit" class="save btn btn-default">Добавить</button>
+</form>
+
+{% endblock %}

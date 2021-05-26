@@ -1,0 +1,10 @@
+{% extends 'canteen/base.html' %}
+
+{% block contents %}
+<a href="{% url 'days_free' %}">Бюджетники</a>
+<a href="{% url 'days_cost' %}">Платники</a>
+<br>
+{% block contents_day %}
+{% endblock %}
+
+{% endblock %}

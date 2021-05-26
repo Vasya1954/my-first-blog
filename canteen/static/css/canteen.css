@@ -1,0 +1,21 @@
+.page-header {
+    background-color: #819FF7;
+    margin-top: 0;
+    padding: 20px 20px 20px 20px;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.top-menu span{
+    font-size: 22px;
+
+}
+
+.main-text {
+    font-size: 22px;
+
+}

@@ -1,10 +1,28 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/canteen.css' %}">
     <title>Столовая</title>
 </head>
 <body>
+
+ <div class="page-header">
+         <a href="/" class="top-menu"><span class="glyphicon glyphicon-cutlery"></span</a>
+         <a href="/" class="top-menu">Главная</a>
+         <a href="{% url 'products_see' %}" class="top-menu">Добавить продукты</a>
+         <a href="{% url 'days' %}" class="top-menu">Добавить день питания</a>
+         <a href="" class="top-menu">Отчет по месяцам</a>
+ </div>
+
+{% block contents %}
+{% endblock %}
+
 
 </body>
 </html>
